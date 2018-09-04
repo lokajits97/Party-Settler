@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lokajit.settler.vatcal">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="33dp"
+        android:text="Enter the amount of VAT charged"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="27dp" />
+
+    <EditText
+        android:id="@+id/vat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/textView5"
+        android:layout_marginLeft="18dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="59dp"
+        android:text=" Total amount excl. tax"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="59dp"
+        app:layout_constraintBottom_toBottomOf="@+id/total"
+        android:layout_marginTop="62dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintTop_toTopOf="@+id/vat" />
+
+    <EditText
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="217dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="218dp"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="calculate"
+        android:text="Calculate VAT"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginTop="31dp"
+        app:layout_constraintTop_toBottomOf="@+id/total"
+        tools:layout_constraintLeft_creator="1" />
+
+    <EditText
+        android:id="@+id/vatperc"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="47dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="47dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="47dp"
+        android:layout_marginRight="47dp" />
+
+</android.support.constraint.ConstraintLayout>
